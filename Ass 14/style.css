@@ -1,0 +1,17 @@
+*{
+    background-color: skyblue;
+}
+
+@font-face {
+    font-family: 'Sharon';
+    src: url(Freedom-10eM.ttf);
+}
+
+h1{
+    font-family: Sharon;
+    font-size: 50px;
+    text-align: center;
+}
+img{
+    height: 50px;
+}
