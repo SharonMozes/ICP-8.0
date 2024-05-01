@@ -26,7 +26,7 @@ img{
     text-decoration: none;
     color:black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 0 40px; /* Reduce padding */
+    padding: 0 40px; 
     margin: 0 40px; 
 }
 .navbar a:hover{
@@ -39,6 +39,7 @@ img{
     border-radius: 50%;
     height: 300px;
     width: 300px;
+    box-shadow: 2px 2px 5px 5px  rgb(125, 159, 233);
 }
 .para{
     
@@ -47,4 +48,20 @@ img{
 .ul{
     font-size: 30px;
    
+}
+.btn{
+   
+
+    border: none;
+    border-radius: 30px;
+    margin: 30px;
+    border-color: black;
+    box-shadow: -2px 2px 5px  rgb(138, 136, 136);
+    color:black;
+ 
+}
+
+.btn:hover{
+    color: whitesmoke;
+    
 }
