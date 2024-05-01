@@ -29,3 +29,11 @@ img{
     padding: 0 40px; /* Reduce padding */
     margin: 0 40px; 
 }
+.div{
+    display: flex;
+}
+.div img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
