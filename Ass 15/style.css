@@ -4,16 +4,38 @@
     height: 200px;
     width: 350px;
     margin:20px;
+    border: 4px solid black;
+    border-style: double;
+    font-size: 25px;
+    text-align: center;
 }
 
+
+
 #card1{
-    background-color: rgb(195, 157, 234);
+    background-color: aquamarine;
 }
 
 #card2{
-    background-color: rgb(195, 157, 234);
+    background-color:  aquamarine;
 }
 
 #card3{
-    background-color: rgb(195, 157, 234);
+    background-color:  aquamarine;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid black;
+
+}
+p{
+    font-size: 20px;
+    padding: 5px;
 }
