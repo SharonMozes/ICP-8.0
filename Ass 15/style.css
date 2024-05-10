@@ -6,7 +6,7 @@
     margin:20px;
     border: 4px solid black;
     border-style: double;
-    font-size: 25px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -14,14 +14,17 @@
 
 #card1{
     background-color: aquamarine;
+    font-size: 10px;
 }
 
 #card2{
-    background-color:  aquamarine;
+    background-color:  pink;
+    font-size: 10px;
 }
 
 #card3{
     background-color:  aquamarine;
+    font-size: 10px;
 }
 
 img{
@@ -32,10 +35,13 @@ img{
     align-items: center;
     margin: auto;
     border-radius: 50%;
-    border: 3px solid black;
-
+    border: 2px solid black;
+   }
+.content{
+    font-size:40px;
+    font-family: cursive;
 }
 p{
-    font-size: 20px;
-    padding: 5px;
+    font-size:15px;
+    font-weight: 100;
 }
