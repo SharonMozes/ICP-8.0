@@ -1,6 +1,6 @@
-.card{
+.card {
     background-color: aquamarine;
-    display: inline-block;
+    block;
     height: 200px;
     width: 350px;
     margin:20px;
