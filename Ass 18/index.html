@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment No 18</title>
+</head>
+<style>
+    @font-face {
+    font-family: 'Sharon';
+    src: url(DS-DIGIT.woff);
+}
+    .cal-body{
+        height: 300px;
+        width: 250px;
+        background-color: #3D3D5C;
+        margin: 40px auto;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 40px;
+    }
+    .screen{
+        background-color: #a1af77;
+        text-align: right;
+        width: 220px;
+        display: block;
+        margin: 0 auto;
+        font-size: 30px;
+        padding: 5px 10px;
+        margin-bottom: 20px;
+        font-family: 'Sharon';       
+    }
+    .btn{
+        width: 50px;
+        text-align: center;
+        padding: 2px 0;
+        font-size: 20px;
+        margin: 4px;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
 
+    }
+
+    .btn-equals{
+        background-color: #ff6348;
+        height: 70px;
+        color: white;
+    }
+
+    .btn:hover{
+        box-shadow: 0 0 5px 0 white;
+        transition:0.5s;
+    }
+
+</style>
+<body>
+    <div class="cal-body">
+        <input type="text" value="0" class="screen">
+        <div class="btn-container">
+            <button class="btn">AC</button>
+            <button class="btn">7</button>
+            <button class="btn">4</button>
+            <button class="btn">1</button>
+            <button class="btn">0</button>
+
+            <button class="btn">M+</button>
+            <button class="btn">8</button>
+            <button class="btn">2</button>
+            <button class="btn">5</button>
+            <button class="btn">.</button>
+
+            <button class="btn">/</button>
+            <button class="btn">9</button>
+            <button class="btn">6</button>
+            <button class="btn">3</button>
+            <button class="btn">%</button>
+
+            <button class="btn">X</button>
+            <button class="btn">-</button>
+            <button class="btn">+</button>
+            <button class=" btn btn-equals">=</button>
+        
+
+        </div>
+
+    </div>
+</body>
+</html>
