@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    position: sticky;
+    left: 550px;
+    top:0px;
+    background-color:#9cf4cb;
+}
+.logo{
+    background-color: #9cf4cb;
+}
+#h1{
+    color: #08321f;
+    font-size: 40px;
+    text-align: center;
+}
+.navbar{
+    display:flex;
+    background-color:#198754;
+    justify-content:space-between;
+    color: white;
+}
+.navbar a{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    font-size: 50px;
+    font-family:'Times New Roman';
+    padding: 0 50px; 
+    margin: 0 50px;
+    color: white;
+    text-decoration: none;
+}
