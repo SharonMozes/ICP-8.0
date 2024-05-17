@@ -4,7 +4,7 @@
     <title>Assignment No 17</title>
 </head>
 <style>
-    .main{
+    .main1{
         display: flex;
         flex-direction:row;
         justify-content: space-evenly;
@@ -14,7 +14,7 @@
         background-image:cover;
         border-radius: 40px;
     }
-    .class{
+    .class1{
         height: 300px;
         width: 500px;
         border-radius:50px 0 50px 0;
@@ -70,21 +70,100 @@
         text-align: center;
         color:crimson;
     }  
+
+    .main2{
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: space-evenly;
+        margin:10px;
+        padding:20px;
+        background-image: url(bg.jpeg);
+        background-image:cover;
+        border-radius: 40px;
+    }
+    .class2{
+        height: 300px;
+        width: 500px;
+        border-radius:50px 0 50px 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding:40px;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        position: relative;
+    }
+
+    .main3{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        margin:10px;
+        padding:20px;
+       
+        border-radius: 40px;
+    }
+    .class{
+        height: 300px;
+        width: 500px;
+        border-radius:50px 0 50px 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding:40px;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        position: relative;
+    }
+
+    .main4{
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: space-evenly;
+        margin:10px;
+        padding:20px;
+        border-radius: 40px;
+    }
+    .class4{
+        height: 300px;
+        width: 500px;
+        border-radius:50px 0 50px 0;
+        padding:40px;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        position: relative;
+    }
+    hr{
+        font-weight: bold;
+    }
+    .h1{
+        background-color: antiquewhite;
+        font-size: 30px;
+        color: crimson;
+    }
+    .btn1{
+        width: 100px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+   
 </style>
 <body>
+    <h1 class="h1">Flex-Direction</h1>
+    <h1>Row</h1>
     <h1>Korean Drama's</h1>
-    <div class="main">
-        <div id="class2" class="class">
+    <div class="main1">
+        <div  class="class1">
             <img src="M2.jpg" height="400px" class="img2">
             <h3>Reply 1997</h3>
             <h4>Korean Drama</h4>
             <div class="btn">
                 <button>Watch Now</button>
             </div>
-   
         </div>
         <br><br>
-        <div id="class3" class="class">
+        <div  class="class1">
             <img src="M3.jpg"width="400px" class="img3">
             <h3>School 2013</h3>
             <h4>Korean Drama</h4>
@@ -93,7 +172,101 @@
             </div>          
         </div>
         <br><br>
-        <div id="class4" class="class">
+        <div  class="class1">
+            <img src="M4.jpg"width="400px" class="img4">
+            <h3>Hi! School-Love On</h3>
+            <h4>Korean Drama</h4>
+            <div class="btn">
+                <button>Watch Now</button>
+            </div>          
+        </div>
+    </div>  <br><br>
+    <hr>
+    <h1>Row Reverse</h1>
+    <h1>Korean Drama's</h1>
+    <div class="main2">
+        <div  class="class2">
+            <img src="M2.jpg" height="400px" class="img2">
+            <h3>Reply 1997</h3>
+            <h4>Korean Drama</h4>
+            <div class="btn">
+                <button>Watch Now</button>
+            </div>
+        </div>
+        <br><br>
+        <div  class="class2">
+            <img src="M3.jpg"width="400px" class="img3">
+            <h3>School 2013</h3>
+            <h4>Korean Drama</h4>
+            <div class="btn">
+                <button>Watch Now</button>
+            </div>          
+        </div>
+        <br><br>
+        <div class="class2">
+            <img src="M4.jpg"width="400px" class="img4">
+            <h3>Hi! School-Love On</h3>
+            <h4>Korean Drama</h4>
+            <div class="btn">
+                <button>Watch Now</button>
+            </div>          
+        </div>
+    </div> <br><br>
+    <hr>
+
+    <h1>Column</h1>
+    <h1>Korean Drama's</h1>
+    <div class="main3">
+        <div  class="class3">
+            <img src="M2.jpg" height="400px" class="img2">
+            <h3>Reply 1997</h3>
+            <h4>Korean Drama</h4>
+            <div class="btn">
+                <button>Watch Now</button>
+            </div>
+        </div>
+        <br><br>
+        <div class="class3">
+            <img src="M3.jpg"width="400px" class="img3">
+            <h3>School 2013</h3>
+            <h4>Korean Drama</h4>
+            <div class="btn">
+                <button>Watch Now</button>
+            </div>          
+        </div>
+        <br><br>
+        <div  class="class3">
+            <img src="M4.jpg"width="400px" class="img4">
+            <h3>Hi! School-Love On</h3>
+            <h4>Korean Drama</h4>
+            <div class="btn">
+                <button>Watch Now</button>
+            </div>          
+        </div>
+    </div> <br><br>
+    <hr>
+    <h1>Column-Reverse</h1>
+    <h1>Korean Drama's</h1>
+    <div class="main4">
+        <div  class="class4">
+            <img src="M2.jpg" height="400px" class="img2">
+            <h3>Reply 1997</h3>
+            <h4>Korean Drama</h4>
+            <div class="btn">
+                <button>Watch Now</button>
+            </div>
+        </div>
+        <br><br>
+        <div  class="class4">
+            <img src="M3.jpg"width="400px" class="img3">
+            <h3>School 2013</h3>
+            <h4>Korean Drama</h4>
+            <div class="btn">
+                <button>Watch Now</button>
+            </div>          
+        </div>
+        <br><br>
+        <div  class="class4">
             <img src="M4.jpg"width="400px" class="img4">
             <h3>Hi! School-Love On</h3>
             <h4>Korean Drama</h4>
@@ -102,5 +275,12 @@
             </div>          
         </div>
     </div>
+    <button class="btn1">
+        <a href="index2.html" class="navigate">Justify Content</a>
+    </button>
+    
+
+
+
 </body>
 </html>

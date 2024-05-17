@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Assignment No 21</title>
+</head>
+<style>
+    body{
+        background-color:#eeeee4;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .brand-logo{
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+    .brand-title{
+        text-align: center;
+    }
+    .brand-address{
+        text-align: right;
+    }
+    .brand-mobile{
+        text-align: right;
+    }
+    .recipt-container{
+        width: 80%;
+        border:1px solid gray;
+        margin: 0 auto;
+        background-color: white;
+        padding: 10px;
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(0,0,0, 2);
+    }
+    .recipt-header{
+        border-bottom: 1px dotted gray;
+    }
+    .recipt-detail{
+        display: flex;
+        justify-content:center;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .recipt-detail-key{
+        color: gray;
+        width: 30%;
+    }
+    .recipt-detail-value{
+        font-weight: bold;
+        border-bottom: 1px dashed gray;
+        width: 30%;
+    }
+    .recipt-title{
+        text-align: center;
+        font-size: 30px;
+        margin: 30px 0;
+    }
+    .recipt-body{
+        position: relative;
+        border-bottom: 1px dashed gray;
+        padding: ;
+    }
+    .stamp{
+        width: 150px;
+        position:absolute;
+        right: 0;
+        bottom: -10px;
+        transform:rotate(-10deg);
+    }
+    .accountant-signature{
+        text-align: right;
+        margin-top: 100px;
+    }
 
+    .recipt-footer{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        background-color:rgb(218, 184, 70);
+    }
+</style>
+<body>
+    <div class="recipt-container">
+        <div class="recipt-header">
+        <img src="./logo.png" class="brand-logo">
+        <h2 class="brand-title">Road To Code</h2>
+        <p class="brand-address">404,Above Lotus Hospital,<br>Shewalewadi Hadapsar,<br>Pune-412308</p>
+        <p class="brand-mobile">+91-8605855138</p>
+        </div>
+
+        <div class="recipt-body">
+            <h3 class="recipt-title">Payment Receipt</h3>
+            <div class="recipt-detail">
+                <div class="recipt-detail-key">
+                    Receipt No. :
+                </div>
+                <div class="recipt-detail-value">
+                    12345678
+                </div>
+            </div>
+            <div class="recipt-detail">
+                <div class="recipt-detail-key">
+                    Amount :
+                </div>
+                <div class="recipt-detail-value">
+                    4000/
+                </div>
+            </div>
+            <div class="recipt-detail">
+                <div class="recipt-detail-key">
+                    Payment Mode :
+                </div>
+                <div class="recipt-detail-value">
+                    UPI
+                </div>
+            </div>
+    
+            <div class="recipt-detail">
+                <div class="recipt-detail-key">
+                    Payment Date:
+                </div>
+                <div class="recipt-detail-value">
+                    16th May 2024
+                </div>
+            </div>
+            <img src="stamp.png" class="stamp">
+            <p class="accountant-signature">Accountant Signature</p><br><br><br>
+            
+        </div>
+        <p>This is a computer generated Receipt and does not require any Signature</p>
+
+        <div class="recipt-footer">
+           Thank You for Your Payment.
+            
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
