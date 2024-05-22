@@ -1,0 +1,102 @@
+body{
+   background-color: skyblue;
+}
+h1{
+    text-align: center;
+}
+.container-content{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+}
+.poem{
+    border:2px solid black;
+    justify-content: space-evenly;
+    margin: 4px;
+    padding: 10px;
+    background-image: url(bg.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 30px;
+    width: 500px;
+    height: 300px;
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 20px;
+
+    }
+    .container-content{
+        font-family: monospace;
+        font-weight:normal;
+        font-size: 10px;
+        display:inline;
+        text-align: center;
+    }
+    .poem{
+        border:2px solid black;
+        justify-content: space-evenly;
+        margin: 4px;
+        padding: 10px;
+        background-color: skyblue;
+        background-repeat: no-repeat;
+        background-size:cover;
+        border-radius: 30px;
+        width: 300px;
+        height: 200px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width:768px){
+    h1{
+        font-size: 20px;
+
+    }
+    .container-content{
+        font-family: monospace;
+        font-weight:bold;
+        font-size: 15px;
+        display:inline;
+        text-align: center;
+    }
+    .poem{
+        border:2px solid black;
+        justify-content: space-evenly;
+        margin: 4px;
+        padding: 10px;
+        background-color: skyblue;
+        background-repeat: no-repeat;
+        background-size:cover;
+        border-radius: 30px;
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+
+    h1{
+        font-size: 20px;
+
+    }
+    .container-content{
+        font-family: monospace;
+        font-weight:normal;
+        font-size: 20px;
+        display:start;
+        text-align: center;
+    }
+    .poem{
+        border:2px solid black;
+        justify-content: space-evenly;
+        margin: 4px;
+        padding: 10px;
+        background-color: skyblue;
+        background-repeat: no-repeat;
+        background-size:cover;
+        border-radius: 30px;
+        width: 400px;
+        height: 500px;
+    }
+}
