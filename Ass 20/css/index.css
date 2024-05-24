@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    background-color: gray;
+    width: 200px;
+
+}
+.content{
+    background-image: url(./../images/contentbg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.menu-items{
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+}
+.active-menu{
+    background-color:pink;
+}
+.menu-items:hover{
+    background-color: rgb(197, 173, 173);
+}
+.menu-icon{
+    height: 25px;
+}
+.menu-text{
+    margin:10px  ;
+    font-size:20px;
+   
+}
+h1{
+    text-align: center;
+    color: rgb(102, 8, 27);
+    font-family: cursive;
+    font-size: 50px;
+}
+.para-container{
+    margin-top:10px;
+    padding: 50px;
+    text-align: center;
+
+}
+.para{
+    font-family: cursive;
+    font-size: 30px;
+    color: rgb(129, 17, 39);
+}
+.bottom-navigation-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    display: none;
+}
+.bottom-menu-icon{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    height: 25px;
+    border-radius:10px;
+   
+}
+@media screen and (max-width:600px){ 
+    .sidebar{
+        display: none;
+    }
+    .bottom-navigation-bar{
+        display:flex;
+        justify-content: space-around;
+    }
+
+    h1{
+        text-align: center;
+        color: rgb(102, 8, 27);
+        font-family: cursive;
+        font-size: 30px;
+    }
+    .para-container{
+        margin-top:10px;
+        padding: 30px;
+        text-align: center;
+    
+    }
+    .para{
+        font-family: cursive;
+        font-size: 20px;
+        color: rgb(129, 17, 39);
+    }
+    
+    
+}
+
+
+@media screen and (min-width:601px) and (max-width:768px){ 
+    .sidebar{
+        display: none;
+    }
+    .bottom-navigation-bar{
+        display:flex;
+        justify-content: space-around;
+    }
+    h1{
+        text-align: center;
+        color: rgb(102, 8, 27);
+        font-family: cursive;
+        font-size: 30px;
+    }
+    .para-container{
+        margin-top:10px;
+        padding: 30px;
+        text-align: center;
+    
+    }
+    .para{
+        font-family: cursive;
+        font-size: 20px;
+        color: rgb(129, 17, 39);
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width:992px){ 
+    
+}
+
+
+@media screen and (min-width:993px) and (max-width:1250px){ 
+    
+}
