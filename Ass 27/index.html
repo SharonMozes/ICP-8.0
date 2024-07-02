@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No 27</title>
+    <style>
+        .btn{
+            color:black;
+            background-color: burlywood;
+            height: 50px;
+            width: 90px;
+            border: solid 2px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body onload="load()">
+    <button class="btn" onclick= "btn()">Hello Broo... </button>
+    <br><br>
+    <button class="btn" ondblclick= "btn2()">Hey Sis... </button>
 
+    <br><br>
+    <input type="text" onkeypress="keyPress()" 
+     onkeydown="keyDown()"
+     onkeyup="keyUp()"/>
+
+     <br><br>
+
+     <img src="flower.jpg" height="200px" onmouseover="onOver()" 
+     onmouseout="Out()"
+     onmousemove="Move()">
+     <br><br>
+     <input type="text" onchange="change()">
+
+    <script>
+        function btn()
+        {
+            console.log('Hey bro button is clicked');
+        }
+
+        function btn2()
+        {
+            console.log('Double clicked button is clicked')
+        }
+
+        function keyPress()
+        {
+            console.log('keyPress() event occured')
+        }
+
+        function keyUp()
+        {
+            console.log('keyUp() event occured')
+        }
+
+        function keyDown()
+        {
+            console.log('keyDown() event occured')
+        }
+
+        function onOver()
+        {
+            console.log('Mouse is over Image')
+        }
+
+        function Out()
+        {
+            console.log('Mouse is out of Image')
+        }
+
+        function Move()
+        {
+            console.log('Mouse is moving on the Image')
+        }
+
+        function change()
+        {
+            console.log('Change Occured')
+        }
+        function load(){
+            alert("Page Loading Completed...")
+        }
+    </script>
+</body>
+</html>
