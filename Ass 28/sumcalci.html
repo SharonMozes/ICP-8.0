@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calculator</title>
+    <style>
+        .main-heading{
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .app-container{
+           justify-content: center;
+           border: double black 5px;
+           border-radius: 20px;
+           margin: auto;
+           padding: 30px;
+           text-align: center;
+           height: 200px;
+           width: 200px;
+           background-color: rgb(165, 228, 249);
+           font-size: 15px;
+           box-shadow: black;
+
+        }
+        .input-box{
+            display:wrap;
+            height: 20px;
+            border: 2px black solid;
+            
+        }
+
+        .btn{
+            color: black;
+            background-color:rgb(81, 166, 200);
+            border:2px solid black;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="main-heading"> SUM CALCULATOR</h1>
+    <div class="app-container">
+    <label for="text">Enter the First Number</label>
+       <input type="text" id="num1" class="input-box">
+     <br><br>
+    <label for="text">Enter the Second Number</label>
+    <input type="text" id="num2" class='input-box'>
+    <p id="result"></p>    
+    <button type="button" onclick="calculateSum()" class="btn" >Calculate</button>
+    <button type="button" onclick="Reset()" class="btn">Reset</button>
+    </div>
+    <script>      
+            const input1st=document.getElementById('num1');
+            const input2nd=document.getElementById("num2");
+            const result=document.getElementById("result");
+            function calculateSum(){
+                const val1=parseInt(input1st.value);
+                const val2=parseInt(input2nd.value);
+                const sum= val1+val2;
+                result.innerText=`Answer: ${sum}`;
+            }
+            function Reset(){
+                input1st.value= " ";
+                input2nd.value= " ";
+                result.innerText= " ";
+            }
+    </script>
+</body>
+</html>
