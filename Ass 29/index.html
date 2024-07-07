@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No 29</title>
+    <style>
+        .main-div{
+            display: block;
+            border: 2px solid black;
+            padding: 100px;
+            width:900px;
+            height:350px;
+            border-radius: 100px;
+            margin: auto;
+            background-color:whitesmoke;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
 
+            
+        }
+        .main-heading{
+            text-align: center;
+            font-size:40px;
+            margin-top: auto;
+            color:black;
+            font-family:monospace;
+            font-weight: bold;
+        }
+        .input-box{
+            width: 900px;
+            height: 90px;
+            display: block;
+            margin: 20px auto;
+        }
+        .result-text{
+            width: 600px;
+            height: 100px;
+            display: block;
+            margin: 20px auto;
+            font-size: 40px;
+
+        }
+        .button-container{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .action-btn{
+            border-radius: 10px;
+            border: solid black;
+            height: 50px;
+            width: 200px;
+            font-size: 15px;
+            background-color: rgb(174, 171, 171);
+        }
+        .action-btn:hover{
+            background-color: white;
+        }
+        .btn{
+
+            border-radius: 10px;
+            border: solid black;
+            height: 50px;
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            font-size: 20px;
+           
+       
+
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-div">
+        <h1 class="main-heading">TEXT TOOL</h1>
+        <input type="text" class="input-box" id="input-text">
+        <p id="result-box" class="result-text"></p>
+        <div class="button-container">
+            <button class="action-btn" onclick="giveActionResult('uppercase')">UPPER CASE</button>
+            <button class="action-btn" onclick="giveActionResult('lowercase')">LOWER CASE</button>
+            <button class="action-btn" onclick="giveActionResult('charactercount')">CHARACTER COUNT</button>
+            <button class="action-btn" onclick="giveActionResult('wordcount')">WORD COUNT </button>
+        </div>  
+        <button type="button" onclick="Reset()" class="btn">Reset</button>
+        
+    </div>
+    <script>
+    const inputElement = document.getElementById('input-text');
+    const resultElement = document.getElementById('result-box');
+
+     function giveActionResult(action){
+    switch(action){
+        case 'uppercase':
+            resultElement.innerText = inputElement.value.toUpperCase();
+            break;
+
+        case 'lowercase':
+            resultElement.innerText = inputElement.value.toLowerCase();
+            break;
+
+        case 'charactercount':
+            resultElement.innerText = `Character count is ${inputElement.value.length}`;
+            break;
+
+        default :
+            resultElement.innerText = `Word count is ${inputElement.value.split(" ").length}`;
+            break;            
+    }
+
+     }
+     function Reset(){
+        inputElement.value=" ";
+        resultElement.innerText=" ";
+     }
+
+    </script>
+</body>
+</html>
