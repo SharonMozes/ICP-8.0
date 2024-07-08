@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+    <style>
+        .main-conatiner{
+            border: 2px solid black;
+            padding: 50px 40px;
+            border-radius: 60px;
+            display: block;
+            margin: 20px auto;
+            width:500px;
+            text-align: center;
+            font-size: 15px;
+            font-family: monospace;
+        }
+        .theme-switcher-conatiner{
+            display: flex;
+            height: 50px;
+            width: 50px;
+            justify-content: space-around;
+        }
+        .bg-dark{
+            background-color: rgba(32, 3, 50, 0.872);
+            color: white;
+        }
+        .bg-light{
+            background-color:rgba(227, 204, 241, 0.872);
+        }
+    </style>
+</head>
+<body class="bg-light" id="main-body">
+    <h1>Dark And Light Switcher</h1>
+    <div class="theme-switcher-conatiner">
+        <img src="light.png" class="theme-selector" onclick="lightMode()"><br><br>
+        <img src="dark.png" class="theme-selector" onclick="darkMode()">
+    </div>
+    <div class=" main-conatiner">
+        <h3>Psalms 23</h3>
+        <p>
+            1. The LORD is my shepherd,I shall not want.<br>
+            2. He makes me lie down in green pastures,he leads me beside the still waters.<br>
+            3. He restors my soul,he leads me in the path of righteousness for his names sake.<br>
+            4. Yeah,though I walk through the valley of the shadow of death,I will fear no <br>evil:for thou art with me; thy rod and thy staff they comfort me.<br>
+            5.Thou prepares a table before me in the presence of mine enemies:thou anoints my head with oil;my cup runneth over.<br>
+            6. Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD forever and ever AMEN   .
+        </p>
+    </div>
+    <script>
+         const theme=document.getElementById('light');
+            let state = false;
+            function darkMode(){
+                const mainBody = document.getElementById('main-body');
+                mainBody.classList.remove('bg-light');
+                mainBody.classList.add('bg-dark')
+            }
+            function lightMode(){
+                const mainBody= document.getElementById('main-body');
+                mainBody.classList.remove('bg-dark');
+                mainBody.classList.add('bg-light');
+            }
+    </script>
+</body>
+</html>

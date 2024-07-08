@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Toggler</title>
+    <style>
+        .main-heading{
+            text-align: center;
+        }
+        .img-css{
+            display: block;
+            margin: 20px auto;
+            height: 300px;
+        }
+        .btn{
+            display:flex;
+            justify-content:center;
+            margin:30px auto;
+            width:100px;
+            height:30px;
+            text-align:center;
+            border-radius:5px;
+            padding: 5px;
+            background-color:gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-heading">BULB TOGGLER</h1>
+    <img src ="bulb-off.png" class="img-css" id="bulb-offimg">
+    <button type="button" class="btn"  onclick="bulbToggle()">TOGGLE</button>
+    <script>
+            const bulbElement=document.getElementById('bulb-offimg');
+            let state = false;
+            function bulbToggle(){
+                if (state == false)
+                {
+                    bulbElement.src = "bulb-on.png";
+                    state=true;
+                }
+                else
+                {
+                    bulbElement.src="bulb-off.png";
+                    state=false;
+                }
+            }
+    </script>
+</body>
+</html>
+
