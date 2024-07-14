@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No 31</title>
+    <style>
+        #main-product-img{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            display: block;
+            margin: 20px auto;
+        }
+        .product-img{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius:5px ;
+            margin: 10px 10px;
+            cursor: pointer;
+        }
+        .product-img-container{
+            display: flex;
+            justify-content: center;
+        }
 
+    </style>
+</head>
+<body>
+    <img src="Frame1.jpeg" id="main-product-img">
+
+    <div class="product-img-container">
+        <img src="Frame1.jpeg" class="product-img" onclick="changeImage('Frame1.jpeg')">
+        <img src="Frame2.jpeg" class="product-img" onclick="changeImage('Frame2.jpeg')">
+        <img src="Frame3.jpeg" class="product-img" onclick="changeImage('Frame3.jpeg')">
+        <img src="Frame4.jpeg" class="product-img" onclick="changeImage('Frame4.jpeg')">
+        <img src="Frame5.jpeg" class="product-img" onclick="changeImage('Frame5.jpeg')">
+    </div>
+    <script>
+        function changeImage(imageName){
+            const mainImage = document.getElementById('main-product-img');
+            mainImage.src= imageName;
+           
+
+
+        }
+
+    </script>
+</body>
+</html>
