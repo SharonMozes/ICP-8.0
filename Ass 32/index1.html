@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <style>
+        .main-container{
+            display:absolute;
+            margin: 20px auto;
+            border-radius: 20px;
+            border: solid black;
+            width: fit-content;
+            background: rgb(197, 188, 188);
+            
+        }
+        .img-dice{
+            height: 100px;
+            margin-top:100px;
+        }
+
+        .char-img{
+            height: 300px;
+            margin: 20px auto;
+        
+        }
+
+        .roll-btn{
+            height: 50px;
+            width: 100px;    
+            margin: 20px 550px; 
+            border: solid black;    
+            border-radius: 40px; 
+            font-size: 30px; 
+            background:grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+
+        <img src="girl.png" class="char-img">
+        <img src="default.png" class="img-dice" id="img-dice">
+        <img src="boy.png" class="char-img">
+    </div>
+    <button class="roll-btn" onclick="roll()">Roll</button>
+    <script>
+        function roll(){
+            const randomNum = Math.floor(Math.random() * (7-1))+ 1   ;
+            const imgElement = document.getElementById("img-dice")
+            switch(randomNum){
+                case 1:
+                    imgElement.src = "1.png";
+                break
+                case 2:
+                    imgElement.src = "2.png";
+                break
+                case 3:
+                    imgElement.src = "3.png";
+                break
+                case 4:
+                    imgElement.src = "4.png";
+                break
+                case 5:
+                    imgElement.src = "5.png";
+                break
+                case 6:
+                    imgElement.src = "6.png";
+                break
+            }
+        }
+    </script>
+</body>
+</html>

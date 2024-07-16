@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icrement -Decrement Counter</title>
+    <style>
+        .product-card{
+            width: 300px;
+            background-color:rgba(203, 229, 245, 0.934);
+            border:none;
+            margin: 10px auto;
+            border-radius: 20px;
+            box-shadow: 0px 0px 2px 2px lightblue;
+            padding:10px;
+        }
+        .img-teddy{
+            height: 200px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        .btn-buy-now{
+            display: block;
+            margin: 10px auto;
+            font-size: 20px;
+            padding: 5px 20px;
+            border: 1px solid black;
+            border-radius: 30px;
+            cursor: pointer;
+            background-color:lightblue;
+        }
+        .btn-quantity{
+            height: 30px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
 
+        .quantity-btn-container{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+        }
+
+        .quantity-text{
+
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <img src="teddy.jpg" class="img-teddy">
+
+        <div class="quantity-btn-container">
+            <img src="minus.png" class="btn-quantity"  onclick="handleQuantity('dec')">
+            <span id="quantity-text" class="quantity-text">1</span>
+            <img src="add.png" class="btn-quantity"onclick="handleQuantity('inc')">
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+    </div>
+    <script>
+        function handleQuantity(action){
+            const quantityElement = document.getElementById('quantity-text');
+            let quantity = parseInt(quantityElement.innerText);
+            if (quantity==1 && action=='dec'){
+                alert('Quantity cannot be less than 1')
+                return
+            }else if(quantity == 5 && action =="inc"){
+                alert ("Quantity cannot be more than 5")
+                return
+            }
+            quantityElement.innerText = action == 'inc'? ++quantity : --quantity;
+
+        }
+
+       
+
+    </script>
+</body>
+</html>
