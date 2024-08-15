@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment No 35</title>
+  <style>
+    *{
+      background-color: peachpuff;
+    }
+    .gallery{
+      width: 500px;
+      height: 300px;
+      object-fit:contain;
+      display: block;
+      margin: 20px auto;
+      border-radius: 20px;
+    }
+    .container{
+      position: relative;
+      width: fit-content;
+      display: block;
+      margin: 10px auto;
+    }
+    .btn{
+      height: 30px;
+      margin: 0 10px;
+      cursor: pointer;
+      background-color: #fff;
+      border-radius: 50%;
+       position: absolute;
+      top: 80px;
+    }
+    .btn-left{
+      left: -30px;
+    }
+    .btn-right{
+      right: -30px;
+    }
+  </style>
+</head>
+<body>
 
+<div class="container">
+  <img src="quote1.jpg" class="gallery" id="img"/>
+  <img src="previous.png" class="btn btn-left" onclick="prev()" />
+  <img src="next.png" class="btn btn-right" onclick="next()" />
+</div>
+
+<script>
+  const Arr = [
+    "quote1.jpg",
+    "quote2.jpg",
+    "quote3.jpeg",
+    "quote4.jpeg",
+    "quote5.jpeg",
+    "quote6.jpeg",
+    "quote7.jpeg",
+    "quote8.jpeg",
+    "quote9.jpeg",
+    "quote10.jpeg"
+    ];
+
+  let imgIndex = 0;
+  
+  const imgElement = document.getElementById('img');
+
+  function prev(){
+    imgIndex==0 ? imgIndex = Arr.length - 1 : imgIndex--;
+
+    imgElement.src=Arr[imgIndex]
+  }
+
+  function next(){
+    (imgIndex == Arr.length - 1) ? imgIndex = 0 : imgIndex++;
+
+    imgElement.src=Arr[imgIndex]
+  }
+</script>
+</body>
+</html>
