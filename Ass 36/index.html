@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment No 36</title>
+  <style>
 
+    .container{
+        margin: 50px 500px;
+        border: 2px solid black;
+        padding: 20px;
+        background-color: peachpuff;
+        border-radius: 20px;
+    }
+
+    .btn{
+        background-color: palegoldenrod;
+        height: 30px;
+        width: 60px;
+        text-align: center;
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <input type="text" id="name" placeholder="Enter your name">
+  <br><br>
+  <button  class=" btn" id="save" onclick="save()">Save</button>
+  <button  class=" btn" id="logout" onclick="logout()">Logout</button>
+  <p id="greetings">Hello User!!!!</p>
+  </div>
+
+  <script>
+
+    const name=document.getElementById('name');
+    const greetElement=document.getElementById('greetings');
+    const btnEle= document.getElementById('save');
+    function save(){
+      const userName= name.value;
+
+      if (!userName){
+        alert('Please Enter your name');
+        return;
+      }
+      localStorage.setItem('name',userName);
+
+      
+      greetElement.innerText=`Hello ${name.value}`;
+      hideElement();
+    }
+
+    const userName=localStorage.getItem('name');
+    
+    if (userName){
+        greetElement.innerText=`Hello ${userName}`;
+        hideElement();
+    }
+
+    function hideElement(){
+        btnEle.style.display='none';
+        name.style.display='none';
+    }
+
+    function logout(){
+        localStorage.removeItem('name');
+        window.location.reload();
+    }
+
+    
+  </script>
+  
+</body>
+</html>
